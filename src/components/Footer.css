@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  background: #222;
+  color: white;
+  height: 2rem; /* define footer height */
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+}
+
+.footer-container p {
+  margin: 0;               /* remove default p margin */
+}

@@ -1,0 +1,45 @@
+.home-section {
+    width: 100%;
+    height: 100vh;
+    /* full viewport height */
+    background-image: url('/images/gabinet_background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-content {
+    color: white;
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+}
+
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+.home-content p {
+    font-size: 1.2rem;
+}

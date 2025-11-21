@@ -1,0 +1,28 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home/Home'
+import Gallery from './pages/Gallery/Gallery'
+import Contact from './pages/Contact/Contact'
+import Services from './pages/Services/Services'
+import Pricing from './pages/Pricing/Pricing'
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Home />
+      <Services />
+      <Gallery />
+      <Pricing />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
+
+
+export default App
