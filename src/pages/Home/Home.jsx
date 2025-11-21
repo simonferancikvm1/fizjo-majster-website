@@ -1,9 +1,8 @@
 import './Home.css';
-import backgroundImage from "/images/gabinet_background.jpg"
 
 export default function Home() {
     return (
-        <section id="home-section" className="home-section" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <section id="home-section" className="home-section" style={{ backgroundImage: "url('/images/gabinet_background.jpg')" }}>
             <div className="overlay">
                 <div className="home-content">
                     <h1>Hello, I'm John Doe</h1>
