@@ -1,4 +1,5 @@
 import React from 'react'
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import './Contact.css';
 
 
@@ -8,10 +9,48 @@ export default function Contact() {
             <div className="contact-container">
                 <h2>Contact Me</h2>
                 <div className="contact-box">
-                    <p><strong>Address:</strong> 123 Main Street, City, Country</p>
-                    <p><strong>Phone:</strong> +123 456 7890</p>
-                    <p><strong>Email:</strong> example@email.com</p>
+                    <div className='contact-items-list'>
+                    <div className="contact-item">
+                        <Phone className="contact-icon" />
+                        <a href="tel:+421900123456" className="contact-link">
+                            +421 900 123 456
+                        </a>
+                    </div>
 
+                    <div className="contact-item">
+                        <Mail className="contact-icon" />
+                        <a
+                            href="mailto:yourname@example.com?subject=Website%20Inquiry"
+                            className="contact-link"
+                        >
+                            yourname@example.com
+                        </a>
+                    </div>
+
+                    <div className="contact-item">
+                        <MessageCircle className="contact-icon" />
+                        <a
+                            href="https://wa.me/421900123456"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="contact-link"
+                        >
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+
+                    <div className="contact-item">
+                        <MapPin className="contact-icon" />
+                        <a
+                            href="https://www.google.com/maps?q=Your+Street+123,+YourCity"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="contact-link"
+                        >
+                            Your Street 123, Your City
+                        </a>
+                    </div>
+                    </div>
                     <div className="map-container">
                         <iframe
                             title="Google Maps"
