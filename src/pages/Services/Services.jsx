@@ -5,28 +5,28 @@ import './Services.css';
 
 const services = [
     {
-        img: '/images/photo1.png',
+        img: 'images/photo1.png',
         name: 'Massage Therapy',
         description: 'Relax and relieve stress with professional massage therapy.',
         details: 'Full body massage, aromatherapy, and deep tissue techniques for relaxation.',
         video: '/videos/massage.mp4', // place your video in public/videos
     },
     {
-        img: '/images/photo1.png',
+        img: 'images/photo1.png',
         name: 'Physical Therapy',
         description: 'Improve mobility and recover from injuries with tailored exercises.',
         details: 'Full body massage, aromatherapy, and deep tissue techniques for relaxation.',
         video: '/videos/massage.mp4', // place your video in public/videos
     },
     {
-        img: '/images/photo1.png',
+        img: 'images/photo1.png',
         name: 'Acupuncture',
         description: 'Enhance your well-being and reduce pain using traditional acupuncture.',
         details: 'Full body massage, aromatherapy, and deep tissue techniques for relaxation.',
         video: '/videos/massage.mp4', // place your video in public/videos
     },
     {
-        img: '/images/photo1.png',
+        img: 'images/photo1.png',
         name: 'Personal Training',
         description: 'Achieve your fitness goals with personalized training programs.',
         details: 'Full body massage, aromatherapy, and deep tissue techniques for relaxation.',

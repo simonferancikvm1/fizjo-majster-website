@@ -4,15 +4,15 @@ import './Gallery.css';
 
 
 const images = [
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
-    '/images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
+    'images/photo1.png',
 ];
 
 

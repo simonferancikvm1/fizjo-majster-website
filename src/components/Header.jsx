@@ -19,7 +19,7 @@ export default function Header() {
             <div className="navbar-container">
                 {/* Logo */}
                 <div className="logo">
-                    <img src="/images/logo_main.png" alt="Logo" className="logo-img" />
+                    <img src="images/logo_main.png" alt="Logo" className="logo-img" />
                 </div>
 
 

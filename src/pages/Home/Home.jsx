@@ -3,7 +3,7 @@ import './Home.css';
 
 export default function Home() {
     return (
-        <section id="home-section" className="home-section" style={{ backgroundImage: "url('/images/gabinet_background.jpg')" }}>
+        <section id="home-section" className="home-section" style={{ backgroundImage: "url('images/gabinet_background.jpg')" }}>
             <div className="overlay">
                 <div className="home-content">
                     <h1>Hello, I am John Doe</h1>
