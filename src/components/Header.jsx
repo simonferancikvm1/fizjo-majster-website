@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from "react";
 import { House, Image, DollarSign, Phone, Briefcase, Facebook, Instagram, Menu } from "lucide-react";
 import "./Header.css";
