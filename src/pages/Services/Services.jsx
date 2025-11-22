@@ -47,7 +47,7 @@ export default function Services() {
 
     return (
         <section id="services-section" className="services-section">
-            <h2>Our Services</h2>
+            <h2>Usługi</h2>
             <div className="services-list">
                 {services.map((service, index) => (
                     <div

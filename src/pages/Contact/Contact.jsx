@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <section id="contact-section" className="contact-section">
             <div className="contact-container">
-                <h2>Contact Me</h2>
+                <h2>Kontakt</h2>
                 <div className="contact-box">
                     <div className='contact-items-list'>
                     <div className="contact-item">

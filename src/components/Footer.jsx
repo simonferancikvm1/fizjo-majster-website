@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from "lucide-react";
+import { CONTACT, SOCIAL } from "../config";
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           <h3 className="footer-title">Follow Us</h3>
           <div className="social-icons">
             <a
-              href="https://instagram.com/YOUR_INSTAGRAM"
+              href={SOCIAL.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -20,7 +21,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://facebook.com/YOUR_FACEBOOK"
+              href={SOCIAL.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -44,14 +45,12 @@ export default function Footer() {
 
           <div className="footer-item">
             <Phone className="footer-icon" />
-            <a href="tel:+421900123456">+421 900 123 456</a>
+            <a href={`tel:${CONTACT.phone}`}>{CONTACT.phone}</a>
           </div>
 
           <div className="footer-item">
             <Mail className="footer-icon" />
-            <a href="mailto:yourmail@example.com">
-              yourmail@example.com
-            </a>
+            <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
           </div>
         </div>
 
@@ -62,11 +61,11 @@ export default function Footer() {
           <div className="footer-item">
             <MapPin className="footer-icon" />
             <a
-              href="https://www.google.com/maps?q=Your+Street+123,+YourCity"
+              href={`https://www.google.com/maps?q=${encodeURIComponent(CONTACT.address)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Your Street 123, Your City
+              {CONTACT.address}
             </a>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function Pricing() {
 
   return (
     <section id="pricing-section" className="pricing-section">
-      <h2>Pricing</h2>
+      <h2>Cennik</h2>
       <div className="pricing-card" onClick={toggleExpand}>
         <h3>One Hour Session</h3>
         <p className="price">180 PLN</p>
