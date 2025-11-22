@@ -2,6 +2,8 @@ import React from 'react'
 import { useState, useRef, useEffect } from 'react';
 import './Pricing.css';
 
+import { SERVICES } from '../../config';
+
 const pricingData = [
   { name: 'Massage Therapy', time: '1h', price: '100 PLN', sessions: '1' },
   { name: 'Physical Therapy', time: '1h', price: '120 PLN', sessions: '1' },
@@ -37,19 +39,17 @@ export default function Pricing() {
           <table className='pricing-table'>
             <thead>
               <tr>
-                <th>Service Name</th>
-                <th>Time</th>
-                <th>Price</th>
-                <th>Number of Sessions</th>
+                <th>Nazwa usługi</th>
+                <th>Czas</th>
+                <th>Cena</th>
               </tr>
             </thead>
             <tbody>
-              {pricingData.map((item, index) => (
+              {SERVICES.map((item, index) => (
                 <tr key={index}>
                   <td>{item.name}</td>
                   <td>{item.time}</td>
                   <td>{item.price}</td>
-                  <td>{item.sessions}</td>
                 </tr>
               ))}
             </tbody>

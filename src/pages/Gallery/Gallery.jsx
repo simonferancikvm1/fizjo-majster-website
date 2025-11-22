@@ -1,19 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import './Gallery.css';
+import { IMAGES } from '../../config';
 
-
-const images = [
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-    'images/photo1.png',
-];
 
 
 export default function Gallery() {
@@ -23,7 +12,7 @@ export default function Gallery() {
     return (
         <section id="gallery-section" className="gallery-section">
             <div className="gallery-grid">
-                {images.map((src, index) => (
+                {IMAGES.map((src, index) => (
                     <img
                         key={index}
                         src={src}

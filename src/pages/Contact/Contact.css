@@ -62,8 +62,16 @@
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .contact-item {
         justify-content: flex-start;
+    }
+
+    .contact-box {
+        padding: 1rem;
+    }
+
+    .contact-section {
+        padding: 2rem 1rem;
     }
 }

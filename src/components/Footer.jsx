@@ -33,15 +33,15 @@ export default function Footer() {
 
         {/* Opening Hours */}
         <div className="footer-section">
-          <h3 className="footer-title">Opening Hours</h3>
-          <p>Mon – Fri: 08:00 – 18:00</p>
-          <p>Sat: 09:00 – 13:00</p>
-          <p>Sun: Closed</p>
+          <h3 className="footer-title">Godziny otwarcia</h3>
+          <p>Pon – Pt: 08:00 – 18:00</p>
+          <p>Sob: 09:00 – 13:00</p>
+          <p>Nie: Zamknięte</p>
         </div>
 
         {/* Contact */}
         <div className="footer-section">
-          <h3 className="footer-title">Contact</h3>
+          <h3 className="footer-title">Kontakt</h3>
 
           <div className="footer-item">
             <Phone className="footer-icon" />
@@ -56,7 +56,7 @@ export default function Footer() {
 
         {/* Address */}
         <div className="footer-section">
-          <h3 className="footer-title">Address</h3>
+          <h3 className="footer-title">Adres</h3>
 
           <div className="footer-item">
             <MapPin className="footer-icon" />

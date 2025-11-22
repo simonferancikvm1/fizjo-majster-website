@@ -1,6 +1,7 @@
 import React from 'react'
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import './Contact.css';
+import { CONTACT } from '../../config';
 
 
 export default function Contact() {
@@ -12,21 +13,21 @@ export default function Contact() {
                     <div className='contact-items-list'>
                     <div className="contact-item">
                         <Phone className="contact-icon" />
-                        <a href="tel:+421900123456" className="contact-link">
-                            +421 900 123 456
+                        <a href="tel:${CONTACT.phone}" className="contact-link">
+                            {CONTACT.phone}
                         </a>
                     </div>
 
                     <div className="contact-item">
                         <Mail className="contact-icon" />
                         <a
-                            href="mailto:yourname@example.com?subject=Website%20Inquiry"
+                            href="mailto:${CONTACT.email}"
                             className="contact-link"
                         >
-                            yourname@example.com
+                            {CONTACT.email}
                         </a>
                     </div>
-
+                    {/* WhatsApp link disabled
                     <div className="contact-item">
                         <MessageCircle className="contact-icon" />
                         <a
@@ -38,7 +39,7 @@ export default function Contact() {
                             Chat on WhatsApp
                         </a>
                     </div>
-
+                    */}
                     <div className="contact-item">
                         <MapPin className="contact-icon" />
                         <a
@@ -47,7 +48,7 @@ export default function Contact() {
                             rel="noopener noreferrer"
                             className="contact-link"
                         >
-                            Your Street 123, Your City
+                            {CONTACT.address}
                         </a>
                     </div>
                     </div>
