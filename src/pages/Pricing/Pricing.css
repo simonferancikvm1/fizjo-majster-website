@@ -1,3 +1,5 @@
+
+
 .pricing-section {
     padding: 4rem 2rem;
     background-color: #f0f8ff;
@@ -15,79 +17,92 @@
     padding: 2rem 3rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    cursor: pointer;
     max-width: 1200px;
     width: 100%;
 }
 
-.pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
 .pricing-card h3 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-}
-
-.price {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0.5rem 0 1rem 0;
-    color: #007bff;
-}
-
-.description {
+    text-align: left;
     font-size: 1rem;
-    color: #555;
+    font-weight: 600;
+    padding: 2px;
+
+
 }
 
-/* Expandable details */
-.pricing-details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-    margin-top: 1rem;
+
+.pricing-card p {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    display: table-cell;
+    padding: 2px;
 }
+
+.pricing-card span.mobile-only {
+    display: none;
+}
+
+.pricing-card span.service-name {
+    font-weight: 500;
+}
+
+
+
+
+.pricing-card .description {
+    text-align: left;
+}
+
 
 .pricing-details table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
 }
 
 .pricing-details th,
 .pricing-details td {
     border: 1px solid #ddd;
     padding: 0.75rem;
+    text-align: left;
 }
 
+
+
+/* Heading of table */
 .pricing-details th {
-    background-color: #007bff;
+    background-color: #2E8B57;
     color: white;
     text-align: left;
 }
 
+/* Every even child gets different color */
 .pricing-details tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.payment-icon {
+    height: 30px;
+}
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .pricing-card {
-        padding: 1.5rem 2rem;
-    }
-
-    .price {
-        font-size: 1.5rem;
+        padding: 1rem 1rem;
     }
 
     .pricing-details table,
     .pricing-details th,
     .pricing-details td {
-        border: 0px solid #ddd;
+       
 
         font-size: 0.9rem;
     }
@@ -105,14 +120,15 @@
     }
 
     .pricing-table tr {
-        display: block;
+ 
         margin-bottom: 1.5rem;
         border-radius: 10px;
         border: #cacaca solid 0.5px;
     }
 
+
+
     .pricing-table td {
-        display: block;
         padding: 6px 0;
         text-align: center;
     }
@@ -121,21 +137,35 @@
         /* Add labels manually */
         font-weight: bold;
         color: #333;
-        display: block;
+
     }
 
-    .pricing-table td:nth-child(1)::before {
-        content: "Nazwa usługi";
+    .pricing-card td {
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 0;
+        padding: 15px;
+
+
     }
 
-    .pricing-table td:nth-child(2)::before {
-        content: "Czas";
+
+    .pricing-card .description {
+    display: none;
     }
 
-    .pricing-table td:nth-child(3)::before {
-        content: "Cena";
+    /* Hide the second column (time) and third column (price stays if needed) */
+    .desktop-only {
+        display: none;
     }
 
-    
+    /* Optional: style mobile-time separately */
+    .pricing-card span.mobile-only {
+        display: inline;
+        font-weight: normal;
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+
 }
-

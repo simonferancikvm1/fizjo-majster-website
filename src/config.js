@@ -107,6 +107,29 @@ export const SERVICES = [
 ];
 
 
+export const PRICING = [
+    {
+        name: "Pierwsza wizyta (Diagnostyka + Terapia)",
+        description: "(Kompleksowe badanie, analiza problemu, indywidualnie dobrana terapia)",
+        duration: "60 min",
+        price: "200zł",
+    },
+    {
+        name: "Kolejna wizyta fizjoterapeutyczna",
+        description: "(Indywidualnie dobrana terapia: Terapia manualna / Terapia mięśniowo-powięziowa / Ćwiczenia / Masaż leczniczy / Suche Igłowanie",
+        duration: "50 min",
+        price: "180zł",
+    },
+    {
+        name: "Wizyta domowa",
+        description: "(Rehabilitacja z dojazdem do pacjenta; w zależności od odległości)",
+        duration: "60 min",
+        price: "od 220zł",
+    },
+
+];
+
+
 export const IMAGES = [
     'images/photos/PHOTO-2025-11-22-16-34-20 2.jpg',
     'images/photos/PHOTO-2025-11-22-16-34-20.jpg',

@@ -1,18 +1,20 @@
 import React from 'react'
-import { useState, useRef, useEffect } from 'react';
+//import { useState, useRef, useEffect } from 'react';
 import './Pricing.css';
 
-import { SERVICES } from '../../config';
+import { PRICING } from '../../config';
 
 const pricingData = [
-  { name: 'Massage Therapy', time: '1h', price: '100 PLN', sessions: '1' },
-  { name: 'Physical Therapy', time: '1h', price: '120 PLN', sessions: '1' },
-  { name: 'Acupuncture', time: '1h', price: '90 PLN', sessions: '1' },
-  { name: 'Rehabilitation', time: '1h', price: '110 PLN', sessions: '1' },
+    { name: 'Massage Therapy', time: '1h', price: '100 PLN', sessions: '1' },
+    { name: 'Physical Therapy', time: '1h', price: '120 PLN', sessions: '1' },
+    { name: 'Acupuncture', time: '1h', price: '90 PLN', sessions: '1' },
+    { name: 'Rehabilitation', time: '1h', price: '110 PLN', sessions: '1' },
 ];
 
 export default function Pricing() {
-  const [expanded, setExpanded] = useState(false);
+
+    /*
+    const [expanded, setExpanded] = useState(false);
   const contentRef = useRef(null);
 
   const toggleExpand = () => setExpanded(!expanded);
@@ -26,36 +28,52 @@ export default function Pricing() {
       }
     }
   }, [expanded]);
+    */
+    return (
+        <section id="pricing-section" className="pricing-section">
+            <h2>Cennik</h2>
+            <div className="pricing-card">
 
-  return (
-    <section id="pricing-section" className="pricing-section">
-      <h2>Cennik</h2>
-      <div className="pricing-card" onClick={toggleExpand}>
-        <h3>One Hour Session</h3>
-        <p className="price">180 PLN</p>
-        <p className="description">Click to see detailed pricing options</p>
 
-        <div ref={contentRef} className={`pricing-details`}>
-          <table className='pricing-table'>
-            <thead>
-              <tr>
-                <th>Nazwa usługi</th>
-                <th>Czas</th>
-                <th>Cena</th>
-              </tr>
-            </thead>
-            <tbody>
-              {SERVICES.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.name}</td>
-                  <td>{item.time}</td>
-                  <td>{item.price}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-  );
+                <div className='pricing-details'>
+                    <table className='pricing-table'>
+                        <thead>
+                            <tr>
+                                <th>Rodzaj zabiegu</th>
+                                <th>Czas trwania</th>
+                                <th>Cena</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {PRICING.map((item, index) => (
+                                <tr key={index}>
+                                    <td>
+
+                                        <span className='service-name'>{item.name}</span>
+                                        {/* new line */}
+                                        <span className="mobile-only"><br /> ({item.duration})</span>
+
+
+                                        <p className='description'>{item.description}</p>
+                                    </td>
+                                    <td className='desktop-only'>
+                                        {item.duration}
+                                    </td>
+                                    <td>
+                                        {item.price}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className="payment-methods">
+                    <img src="/images/blik.png" alt="Blik Payment" className="payment-icon" />
+                    <img src="/images/visa.png" alt="Visa Payment" className="payment-icon" />
+                    <img src="/images/mastercard.png" alt="Mastercard Payment" className="payment-icon" />
+                </div>
+            </div>
+        </section>
+    );
 }

@@ -1,5 +1,5 @@
 header.navbar {
-  background-color: #2a6caf;
+  background-color: #2E8B57;
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100%;
@@ -119,7 +119,7 @@ header.navbar {
     display: none;
     flex-direction: column;
     gap: 0;
-    background-color: #1e90ff;
+    background-color: #2E8B57;
     position: absolute;
     top: 100%;
     right: 0;
@@ -158,7 +158,7 @@ header.navbar {
     display: none;
     flex-direction: column;
     gap: 0;
-    background-color: #1e90ff;
+    background-color: #2E8B57;
     position: absolute;
     top: 100%;
     right: 0;
