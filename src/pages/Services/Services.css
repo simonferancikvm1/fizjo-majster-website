@@ -96,7 +96,6 @@
 
   .service-item {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
@@ -107,6 +106,8 @@
 
   .service-info {
     margin-left: 0;
+    gap: 20px;
+    display: flex;
   }
 
   .service-video {

@@ -15,7 +15,7 @@ export const RESERVATION = {
 
 export const SERVICES = [
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/diagnostyka_funkcjonalna.png",
     name: "Diagnostyka funkcjonalna",
     description: "Ocena sposobu poruszania się, zakresu ruchu i pracy mięśni, aby znaleźć główną przyczynę dolegliwości.",
     details: "Diagnostyka funkcjonalna polega na analizie ruchu, postawy oraz pracy mięśni i stawów. Pozwala precyzyjnie określić, skąd biorą się bóle lub ograniczenia ruchowe. Na podstawie badania dobierany jest indywidualny plan terapii.",
@@ -24,7 +24,7 @@ export const SERVICES = [
     price: "150 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/terapia_bolu.png",
     name: "Terapia bólu karku, kręgosłupa, barku, bioder, kolan",
     description: "Skuteczne leczenie bólu w obrębie kręgosłupa i stawów obwodowych.",
     details: "Terapia ukierunkowana na redukcję bólu i przywrócenie sprawności w obszarach takich jak kark, kręgosłup, barki, biodra czy kolana. Wykorzystuje techniki manualne i pracę z tkankami miękkimi.",
@@ -33,7 +33,7 @@ export const SERVICES = [
     price: "160 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/terapia_miesniowo_powieziowa.png",
     name: "Terapia mięśniowo-powięziowa",
     description: "Praca z napięciami mięśni i powięzi w celu przywrócenia elastyczności.",
     details: "Terapia mięśniowo-powięziowa oddziałuje na tkanki miękkie, zmniejsza ból i poprawia ruchomość. Idealna przy przewlekłych napięciach i przeciążeniach.",
@@ -42,7 +42,7 @@ export const SERVICES = [
     price: "170 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/terapia_manualna.png",
     name: "Terapia manualna",
     description: "Techniki mobilizacji i manipulacji stosowane w leczeniu bólu.",
     details: "Terapia manualna obejmuje precyzyjne techniki pracy na stawach i mięśniach. Pomaga odblokować ograniczenia, zmniejszyć ból i poprawić ruchomość.",
@@ -51,7 +51,7 @@ export const SERVICES = [
     price: "170 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/korekta_wad_postawy.png",
     name: "Korekta wad postawy",
     description: "Ćwiczenia poprawiające ustawienie ciała i nawyki ruchowe.",
     details: "Terapia posturalna obejmuje ćwiczenia wzmacniające, rozciągające oraz edukację ruchową, pomagając poprawić sylwetkę i zapobiegać bólowi.",
@@ -60,7 +60,7 @@ export const SERVICES = [
     price: "150 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/trening_mediczny.png",
     name: "Trening medyczny",
     description: "Indywidualne ćwiczenia wspierające powrót do sprawności.",
     details: "Trening medyczny łączy elementy rehabilitacji i treningu siłowego, poprawiając stabilizację, siłę i kontrolę ruchu.",
@@ -69,7 +69,7 @@ export const SERVICES = [
     price: "170 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/masaz_sportowy.png",
     name: "Masaż sportowy góra/dół",
     description: "Intensywny masaż dla sportowców i osób aktywnych.",
     details: "Pomaga zwiększyć ukrwienie, rozluźnić przeciążone mięśnie oraz przyspieszyć regenerację. Wybór: część górna lub dolna ciała.",
@@ -78,7 +78,7 @@ export const SERVICES = [
     price: "160 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/masaz_funkcjonalny.png",
     name: "Masaż funkcjonalny",
     description: "Połączenie masażu i terapii manualnej dla poprawy ruchu.",
     details: "Masaż funkcjonalny usprawnia wzorce ruchowe, usuwa napięcia i poprawia elastyczność tkanek miękkich.",
@@ -87,7 +87,7 @@ export const SERVICES = [
     price: "160 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/masaz_termiczny.png",
     name: "Masaż termiczny",
     description: "Terapia ciepłem lub zimnem dla rozluźnienia i regeneracji.",
     details: "Wykorzystuje gorące lub zimne bodźce, poprawiając krążenie i zmniejszając napięcia mięśniowe. Pomocny przy sztywności i stresie.",
@@ -96,7 +96,7 @@ export const SERVICES = [
     price: "150 PLN"
   },
   {
-    img: "images/photo1.png",
+    img: "images/thumbnails/drenaz_limfatyczny.png",
     name: "Drenaż limfatyczny",
     description: "Delikatny masaż wspomagający usuwanie obrzęków.",
     details: "Precyzyjna technika masażu usprawniająca przepływ limfy, redukująca obrzęki oraz wspierająca detoksykację organizmu.",

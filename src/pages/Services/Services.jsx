@@ -6,6 +6,7 @@ import { SERVICES } from '../../config';
 
 
 
+
 export default function Services() {
     const [expandedIndex, setExpandedIndex] = useState(null);
     const contentRefs = useRef([]);
@@ -26,10 +27,16 @@ export default function Services() {
                         className="service-item"
                         onClick={() => toggleExpand(index)}
                     >
-                        <img src={service.img} alt={service.name} className="service-img" />
+                        
+
+                        
                         <div className="service-info">
-                            <h3>{service.name}</h3>
-                            <p>{service.description}</p>
+                            <img src={service.img} alt={service.name} className="service-img" />
+                            <div>
+                                <h3>{service.name}</h3>
+                                <p>{service.description}</p>
+                            </div>
+                       </div>
 
                             <div
                                 ref={(el) => (contentRefs.current[index] = el)}
@@ -44,7 +51,7 @@ export default function Services() {
                                 />
                             </div>
                         </div>
-                    </div>
+                    
                 ))}
             </div>
         </section>

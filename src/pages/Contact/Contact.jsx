@@ -13,7 +13,7 @@ export default function Contact() {
                     <div className='contact-items-list'>
                     <div className="contact-item">
                         <Phone className="contact-icon" />
-                        <a href="tel:${CONTACT.phone}" className="contact-link">
+                        <a href={`tel:${CONTACT.phone}`} className="contact-link">
                             {CONTACT.phone}
                         </a>
                     </div>
@@ -21,7 +21,7 @@ export default function Contact() {
                     <div className="contact-item">
                         <Mail className="contact-icon" />
                         <a
-                            href="mailto:${CONTACT.email}"
+                            href={`mailto:${CONTACT.email}`}
                             className="contact-link"
                         >
                             {CONTACT.email}
