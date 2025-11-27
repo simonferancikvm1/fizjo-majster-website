@@ -85,11 +85,11 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .payment-icon {
-    height: 30px;
+    height: 20px;
 }
 
 

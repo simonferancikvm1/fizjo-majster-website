@@ -20,11 +20,13 @@ export default function Header() {
             <div className="navbar-container">
                 {/* Logo */}
                 <div className="logo">
-                    <img src="images/logo_main.png" alt="Logo" className="logo-img" />
+                    <a href="#home-section" onClick={handleLinkClick}>
+                        <img src="images/logo_main.png" alt="Logo" className="logo-img" />
+                    </a>
                 </div>
                 {/* Desktop Menu */}
                 <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-                    <a href="#home-section" className="nav-item" onClick={handleLinkClick}><House className="icon" /> O nas</a>
+                    <a href="#home-section" className="nav-item" onClick={handleLinkClick}><House className="icon" /> O mnie</a>
                     <a href="#services-section" className="nav-item" onClick={handleLinkClick}><Briefcase className="icon" /> Usługi</a>
                     <a href="#gallery-section" className="nav-item" onClick={handleLinkClick}><Image className="icon" /> Galeria</a>
                     <a href="#pricing-section" className="nav-item" onClick={handleLinkClick}><DollarSign className="icon" /> Cennik</a>
