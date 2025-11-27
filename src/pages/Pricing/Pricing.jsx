@@ -13,22 +13,6 @@ const pricingData = [
 
 export default function Pricing() {
 
-    /*
-    const [expanded, setExpanded] = useState(false);
-  const contentRef = useRef(null);
-
-  const toggleExpand = () => setExpanded(!expanded);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      if (expanded) {
-        contentRef.current.style.maxHeight = contentRef.current.scrollHeight + 'px';
-      } else {
-        contentRef.current.style.maxHeight = '0px';
-      }
-    }
-  }, [expanded]);
-    */
     return (
         <section id="pricing-section" className="pricing-section">
             <h2>Cennik</h2>
