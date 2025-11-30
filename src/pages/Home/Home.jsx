@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
-import majsterImg from '/images/majster.png'; // make sure this path is correct
 
 export default function Home() {
   const [inView, setInView] = useState(false);
@@ -33,7 +32,7 @@ export default function Home() {
           <p>I am a passionate physiotherapist.</p>
         </div>
         <img
-          src={majsterImg}
+          src="images/majster.png"
           alt="Majster"
           className={`majster-img ${inView ? 'slide-in' : ''}`}
         />
