@@ -1,5 +1,5 @@
 .gallery-section {
-    padding: 3em;
+    padding: 1.5em;
 }
 
 
@@ -90,6 +90,12 @@
 
         /* Make it obvious that you can scroll */
         cursor: grab;
+        height: 330px; /* adjust as needed */
+        align-items: center;
+    }
+
+    .gallery-wrapper {
+        padding: ;
     }
 
     .gallery-grid:active {
@@ -97,8 +103,7 @@
     }
 
     .gallery-img {
-        flex: 0 0 85%; /* Show 85% of the screen so next item peeks */
-        height: auto;
+        height: 90%;
         scroll-snap-align: center;
         object-fit: cover;
         border-radius: 10px;
