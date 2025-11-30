@@ -19,6 +19,7 @@
 
 .service-item {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   background: white;
@@ -41,7 +42,9 @@
 }
 
 .service-info {
+  display: flex;
   flex: 1;
+  gap: 20px;
   margin-left: 1.5rem;
   text-align: left;
 }
@@ -71,6 +74,7 @@
 /* Optional: smooth fade in */
 .service-details p,
 .service-details video {
+  text-align: left;
   opacity: 0;
   transition: opacity 0.3s ease;
 }

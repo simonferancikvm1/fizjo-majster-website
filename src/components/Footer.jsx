@@ -9,7 +9,7 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="footer-section">
-          <h3 className="footer-title">Follow Us</h3>
+          <h3 className="footer-title">Obserwuj mnie</h3>
           <div className="social-icons">
             <a
               href={SOCIAL.instagram}
