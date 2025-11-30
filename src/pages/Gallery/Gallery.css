@@ -35,13 +35,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3000;
+    z-index: 9999;
 }
 
 .preview-img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 12px;
+    object-fit: contain;
 }
 
 .arrow {
@@ -67,8 +68,8 @@
 
 .close-btn {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 100px;
+    right: -10px;
     font-size: 3rem;
     background: none;
     border: none;
@@ -85,7 +86,7 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         gap: 10px;
-        padding: 0 20px;
+        padding: 0 10px;
         scroll-behavior: smooth;
 
         /* Make it obvious that you can scroll */
@@ -95,7 +96,7 @@
     }
 
     .gallery-wrapper {
-        padding: ;
+        padding: 5px;
     }
 
     .gallery-grid:active {
@@ -116,5 +117,6 @@
     .gallery-grid::-webkit-scrollbar {
         display: none;
     }
+
 }
 

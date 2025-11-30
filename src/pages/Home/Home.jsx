@@ -1,15 +1,43 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
+import majsterImg from '/images/majster.png'; // make sure this path is correct
 
 export default function Home() {
-    return (
-        <section id="home-section" className="home-section" style={{ backgroundImage: "url('images/gabinet_background.jpg')" }}>
-            <div className="overlay">
-                <div className="home-content">
-                    <h1>Piotr Bajdziak</h1>
-                    <p>I am a passionate physiotherapist.</p>
-                </div>
-            </div>
-        </section>
+  const [inView, setInView] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+        }
+      },
+      { threshold: 0.3 }
     );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
+  return (
+    <section id="home-section" ref={sectionRef} className="home-section">
+      <div className="overlay">
+        <div className="home-content">
+          <h1>Piotr Bajdziak</h1>
+          <p>I am a passionate physiotherapist.</p>
+        </div>
+        <img
+          src={majsterImg}
+          alt="Majster"
+          className={`majster-img ${inView ? 'slide-in' : ''}`}
+        />
+      </div>
+    </section>
+  );
 }
