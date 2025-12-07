@@ -4,13 +4,6 @@ import './Pricing.css';
 
 import { PRICING } from '../../config';
 
-const pricingData = [
-    { name: 'Massage Therapy', time: '1h', price: '100 PLN', sessions: '1' },
-    { name: 'Physical Therapy', time: '1h', price: '120 PLN', sessions: '1' },
-    { name: 'Acupuncture', time: '1h', price: '90 PLN', sessions: '1' },
-    { name: 'Rehabilitation', time: '1h', price: '110 PLN', sessions: '1' },
-];
-
 export default function Pricing() {
 
     return (
@@ -53,9 +46,9 @@ export default function Pricing() {
                 </div>
 
                 <div className="payment-methods">
-                    <img src="images/blik.png" alt="Blik Payment" className="payment-icon" />
-                    <img src="images/visa.png" alt="Visa Payment" className="payment-icon" />
-                    <img src="images/mastercard.png" alt="Mastercard Payment" className="payment-icon" />
+                    <img src="images/blik.webp" alt="Blik Payment" className="payment-icon" />
+                    <img src="images/visa.webp" alt="Visa Payment" className="payment-icon" />
+                    <img src="images/mastercard.webp" alt="Mastercard Payment" className="payment-icon" />
                 </div>
             </div>
         </section>

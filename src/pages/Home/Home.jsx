@@ -32,7 +32,7 @@ export default function Home() {
           <p>I am a passionate physiotherapist.</p>
         </div>
         <img
-          src="images/majster.png"
+          src="images/majster.webp"
           alt="Majster"
           className={`majster-img ${inView ? 'slide-in' : ''}`}
         />

@@ -21,7 +21,7 @@ export default function Header() {
                 {/* Logo */}
                 <div className="logo">
                     <a href="#home-section" onClick={handleLinkClick}>
-                        <img src="images/logo_main.png" alt="Logo" className="logo-img" />
+                        <img src="images/logo_main.webp" alt="Logo" className="logo-img" />
                     </a>
                 </div>
                 {/* Desktop Menu */}

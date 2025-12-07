@@ -36,6 +36,7 @@ export default function Gallery() {
                         alt={`Gallery ${index + 1}`}
                         className="gallery-img"
                         onClick={() => setPreviewIndex(index)}
+                        loading='lazy'
                     />
                 ))}
             </div>
