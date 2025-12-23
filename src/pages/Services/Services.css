@@ -1,6 +1,10 @@
 .services-section {
   padding: 4rem 2rem;
-  background-color: #f5f5f5;
+  background: linear-gradient(
+        180deg,
+        #f9fafb 0%,
+        #f2f7ff 100%
+  );
   text-align: center;
 }
 
@@ -100,7 +104,7 @@
 }
 
 /* Mobile responsive */
-@media (max-width: 500px) {
+@media (max-width: 950px) {
 
   .services-section {
     padding: 2rem 1rem;

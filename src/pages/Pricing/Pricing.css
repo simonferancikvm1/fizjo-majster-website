@@ -2,7 +2,12 @@
 
 .pricing-section {
     padding: 4rem 2rem;
-    background-color: #f0f8ff;
+    background: linear-gradient(
+    180deg,
+    #f9fafb 0%,
+    #f2f7ff 100%
+  );
+    
     text-align: center;
 }
 

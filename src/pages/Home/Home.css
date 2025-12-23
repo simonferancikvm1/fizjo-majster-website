@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     /* full viewport height */
-    background-color: white;
+    background-color: #f9fafb;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -18,8 +18,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     /* dark overlay */
+        background: rgba(0, 0, 0, 0.85);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,30 +30,104 @@
 .home-content {
     color: white;
     text-align: center;
-    max-width: 700px;
+    max-width: 1000px;
     padding: 20px;
 }
 
 
 .home-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
+.home-content h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: white;
+}
 
 .home-content p {
-    font-size: 1.2rem;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  color: white;
 }
 
-.majster-img {
+.home-content .highlight {
+  font-weight: 700;
+  color: white;
+}
+
+
+.majster-goalie-img {
   position: absolute;
   left: -200px; /* start off-screen */
-  bottom: 20px;
+  bottom: 80px;
   width: 300px;
   transition: transform 1s ease, left 1s ease;
 }
 
-.majster-img.slide-in {
+.majster-goalie-img.slide-in {
   left: 50px; /* slide into view */
   transform: translateX(0);
+}
+
+.majster-img {
+  position: absolute;
+  right: -200px; /* start off-screen */
+  bottom: 40px;
+  width: 150px;
+  transition: transform 1s ease, right 1s ease;
+}
+
+.majster-img.slide-in {
+  right: -50px; 
+  transform: translateX(0) rotate(0deg);
+  opacity: 0;
+  animation: slideRotate 1.2s ease-out forwards;
+  animation-delay: 1s;
+
+}
+
+@keyframes slideRotate {
+  to {
+    transform: translateX(-120px) rotate(-400deg);
+    opacity: 1;
+  }
+}
+
+/* Base animation */
+.slide {
+  font-size: 1.05rem;
+  margin-bottom: 1.8rem;
+  opacity: 0;
+  animation: slideIn 0.8s ease-out forwards;
+}
+
+/* Direction */
+.slide-left {
+  transform: translateX(-200px);
+}
+
+.slide-right {
+  transform: translateX(200px);
+}
+
+/* Stagger effect */
+.slide:nth-of-type(2) {
+  animation-delay: 0.15s;
+}
+.slide:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.slide:nth-of-type(4) {
+  animation-delay: 0.45s;
+}
+
+/* Keyframes */
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

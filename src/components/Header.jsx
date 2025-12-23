@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from "react";
-import { House, Image, DollarSign, Phone, Briefcase, Facebook, Instagram, Menu } from "lucide-react";
+import { House, Image, DollarSign, Phone, Briefcase, Facebook, Instagram, Menu, X } from "lucide-react";
 import "./Header.css";
 import { SOCIAL } from '../config';
 
@@ -13,7 +13,7 @@ export default function Header() {
         setMenuOpen(false); // close menu after clicking a link
     };
 
-    
+
 
     return (
         <header className="navbar">
@@ -34,8 +34,12 @@ export default function Header() {
                 </nav>
                 {/* Mobile Menu Toggle */}
                 <div className="mobile-header-row">
-                    <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-                        <Menu className="icon" />
+                    <button
+                        className={`menu-toggle ${menuOpen ? "open" : ""}`}
+                        onClick={() => setMenuOpen(!menuOpen)}
+                        aria-label="Toggle menu"
+                    >
+                        {menuOpen ? <X className="icon" /> : <Menu className="icon" />}
                     </button>
                     <div className="social-media">
                         <a href={SOCIAL.facebook} target="blank" className="nav-item"><Facebook className="icon" /></a>

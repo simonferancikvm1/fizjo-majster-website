@@ -1,3 +1,9 @@
+export const INFO = {
+  name: "Piotr Bajdziak",
+  bio: "Witaj w moim gabinecie. Jestem magistrem fizjoterapii, absolwentem Akademii Górnośląskiej oraz Szkoły Mistrzostwa Sportowego BBTS Podbeskidzie. Jako wciąż aktywny sportowiec, doskonale rozumiem mechanikę ludzkiego ciała oraz wyzwania, jakie niesie ze sobą trening i codzienne funkcjonowanie. W swojej pracy w Szczecinie łączę wiedzę akademicką z praktyką, specjalizując się w rehabilitacji sportowej, treningu medycznym oraz zaawansowanych metodach terapii manualnej i powięziowej. Niezależnie od tego, czy walczysz z przewlekłym bólem, czy wracasz do formy po kontuzji – pomogę Ci odzyskać sprawność.",
+  appointment_info: "Jak przygotować się do wizyty? Proszę zabierz ze sobą wygodny strój sportowy(np. szorty, koszulkę na ramiączkach), a także całą dokumentację medyczną(RTG,USG,REZONANS) dotyczące dolegliwości."
+}
+
 export const CONTACT = {
     phone: "+48 789 264 628",
     email: "majster.fizjo@example.com",
