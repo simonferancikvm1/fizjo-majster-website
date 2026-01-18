@@ -43,7 +43,7 @@ export default function Contact() {
                     <div className="contact-item">
                         <MapPin className="contact-icon" />
                         <a
-                            href="https://www.google.com/maps?q=Your+Street+123,+YourCity"
+                            href="https://www.google.com/maps/place/al.+Powsta%C5%84c%C3%B3w+Wielkopolskich+66%2F68,+70-111+Szczecin"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="contact-link"
@@ -55,7 +55,7 @@ export default function Contact() {
                     <div className="map-container">
                         <iframe
                             title="Google Maps"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.161474479367!2d14.448737361640875!3d53.42982104318152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa0eff092d110b%3A0xf4db281a60b7b5fa!2sPodg%C3%B3rna%2014%2C%2072-002%20Mierzyn!5e0!3m2!1ssk!2spl!4v1763635290690!5m2!1ssk!2spl"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.7261232869943!2d14.52815427648291!3d53.40651499380644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa08dd6737500b%3A0x12a3ecb4fabf0a95!2sal.%20Powsta%C5%84c%C3%B3w%20Wielkopolskich%2066%2F68%2C%2070-111%20Szczecin!5e0!3m2!1ssk!2spl!4v1767800978050!5m2!1ssk!2spl"
                             width="100%"
                             height="400"
                             style={{ border: 0 }}

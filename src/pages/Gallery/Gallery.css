@@ -2,15 +2,6 @@
     padding: 1.5em;
 }
 
-/*
-.gallery-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: white;
-}
-*/
-
 .gallery-grid {
     display: flex;
     overflow-x: auto;

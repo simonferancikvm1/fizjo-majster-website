@@ -3,6 +3,7 @@ import { useState } from "react";
 import { House, Image, DollarSign, Phone, Briefcase, Facebook, Instagram, Menu, X } from "lucide-react";
 import "./Header.css";
 import { SOCIAL } from '../config';
+import { Link } from "react-router-dom";
 
 
 export default function Header() {

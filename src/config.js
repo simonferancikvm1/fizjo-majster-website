@@ -5,9 +5,9 @@ export const INFO = {
 }
 
 export const CONTACT = {
-    phone: "+48 789 264 628",
-    email: "majster.fizjo@example.com",
-    address: "Your Street 123, Szczecin",
+    phone: "538 636 708",
+    email: "piotrbajdziak@fizjomajster.pl",
+    address: "al. Powstańców Wielkopolskich 66/68, 70-111 Szczecin",
 };
 
 export const SOCIAL = {
@@ -16,7 +16,7 @@ export const SOCIAL = {
 };
 
 export const RESERVATION = {
-    booksy: "https://booksy.com/en-pl/#"
+    booksy: "https://fizjomajstergabinetrehabilitacji.booksy.com/h"
 }
 
 export const SERVICES = [

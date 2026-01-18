@@ -1,8 +1,10 @@
 .contact-section {
     padding: 4rem 2rem;
-    background: linear-gradient(180deg,
-            #f9fafb 0%,
-            #f2f7ff 100%)
+    background: linear-gradient(
+        180deg,
+        #f9fafb 0%,
+        #f2f7ff 100%
+    )
 }
 
 .contact-section h2 {
@@ -41,6 +43,7 @@
     width: 22px;
     height: 22px;
     color: black;
+    flex-shrink: 0;
 }
 
 .contact-link {

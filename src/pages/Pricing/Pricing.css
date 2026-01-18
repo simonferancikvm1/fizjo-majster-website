@@ -76,7 +76,7 @@
 
 /* Heading of table */
 .pricing-details th {
-    background-color: #2E8B57;
+    background-color: rgb(0, 137,192);
     color: white;
     text-align: left;
 }

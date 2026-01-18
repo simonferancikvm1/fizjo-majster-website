@@ -53,16 +53,18 @@ export default function Home() {
             formy po kontuzji – pomogę Ci odzyskać sprawność.
           </p>
         </div>
+        {/*
         <img
           src="images/majster_goalie.webp"
           alt="Majster Goalie"
           className={`majster-goalie-img ${inView ? 'slide-in' : ''}`}
         />
         <img
-          src="images/majster.webp"
+          src="images/profile_picture.webp"
           alt="Majster"
           className={`majster-img ${inView ? 'slide-in' : ''}`}
         />
+        */}
       </div>
     </section>
   );

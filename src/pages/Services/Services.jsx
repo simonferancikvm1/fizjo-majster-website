@@ -43,12 +43,14 @@ export default function Services() {
                                 className={`service-details ${expandedIndex === index ? 'open' : ''}`}
                             >
                                 <p>{service.details}</p>
+                                {/*
                                 <video
                                     src={service.video}
                                     controls
                                     width="100%"
                                     className="service-video"
                                 />
+                                */}
                             </div>
                         </div>
                     
