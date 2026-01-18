@@ -36,7 +36,7 @@ export default function Footer() {
           <h3 className="footer-title">Godziny otwarcia</h3>
           <p>Pon – Pt: 08:00 – 18:00</p>
           <p>Sob: 09:00 – 13:00</p>
-          <p>Nie: Zamknięte</p>
+          <p>Ndz: Zamknięte</p>
         </div>
 
         {/* Contact */}

@@ -46,8 +46,8 @@ export default function Pricing() {
                 </div>
 
                 <div className="payment-methods">
+                    <img src="images/cash.webp" alt="Cash Payment" className="payment-icon" />
                     <img src="images/blik.webp" alt="Blik Payment" className="payment-icon" />
-
                     {/* 
                     <img src="images/visa.webp" alt="Visa Payment" className="payment-icon" /> 
                     <img src="images/mastercard.webp" alt="Mastercard Payment" className="payment-icon" /> 

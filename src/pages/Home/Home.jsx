@@ -59,11 +59,6 @@ export default function Home() {
           alt="Majster Goalie"
           className={`majster-goalie-img ${inView ? 'slide-in' : ''}`}
         />
-        <img
-          src="images/profile_picture.webp"
-          alt="Majster"
-          className={`majster-img ${inView ? 'slide-in' : ''}`}
-        />
         */}
       </div>
     </section>
