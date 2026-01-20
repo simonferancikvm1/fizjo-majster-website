@@ -72,31 +72,31 @@
 /* Smooth expansion */
 .service-details {
   max-height: 0;
-  /* collapsed */
   overflow: hidden;
-  transition: max-height 1s ease;
-  /* smooth animation */
+  padding-top: 0;
+  opacity: 0;
+
+  transition:
+    max-height 400ms ease,
+    padding-top 600ms ease,
+    opacity 500ms ease;
+
+  will-change: max-height;
+  contain: layout paint;
 }
 
 .service-details.open {
-  max-height: 500px;
-  /* adjust to expected content height */
+  max-height: 600px;
   padding-top: 1em;
+  opacity: 1;
 }
 
 /* Optional: smooth fade in */
 .service-details p,
 .service-details video {
   text-align: left;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  margin-top: 1em;
 }
-
-.service-details.open p,
-.service-details.open video {
-  opacity: 1;
-}
-
 
 .service-video {
   border-radius: 12px;
@@ -115,9 +115,13 @@
     text-align: center;
   }
 
+  .service-item:hover {
+    transform: none;
+  }
+
   .service-img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .service-info {
@@ -133,7 +137,7 @@
     font-size: 0.8em;
   }
 
-  .service-details.open p {
+  .service-details p {
     font-size: 0.9em;
   }
 

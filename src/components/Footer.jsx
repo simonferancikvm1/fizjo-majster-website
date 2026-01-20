@@ -21,7 +21,7 @@ export default function Footer() {
             </a>
 
             <a
-              href={SOCIAL.instagram}
+              href={SOCIAL.facebook}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"

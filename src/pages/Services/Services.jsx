@@ -9,7 +9,7 @@ import { SERVICES } from '../../config';
 
 export default function Services() {
     const [expandedIndex, setExpandedIndex] = useState(null);
-    const contentRefs = useRef([]);
+    
 
     const toggleExpand = (index) => {
         setExpandedIndex(expandedIndex === index ? null : index);
@@ -39,7 +39,7 @@ export default function Services() {
                        </div>
 
                             <div
-                                ref={(el) => (contentRefs.current[index] = el)}
+                                
                                 className={`service-details ${expandedIndex === index ? 'open' : ''}`}
                             >
                                 <p>{service.details}</p>

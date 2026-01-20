@@ -2,7 +2,7 @@ import React from 'react'
 //import { useState, useRef, useEffect } from 'react';
 import './Pricing.css';
 
-import { PRICING } from '../../config';
+import { SERVICES, INFO } from '../../config';
 
 export default function Pricing() {
 
@@ -22,7 +22,7 @@ export default function Pricing() {
                             </tr>
                         </thead>
                         <tbody>
-                            {PRICING.map((item, index) => (
+                            {SERVICES.map((item, index) => (
                                 <tr key={index}>
                                     <td>
 
@@ -30,8 +30,6 @@ export default function Pricing() {
                                         {/* new line */}
                                         <span className="mobile-only"><br /> ({item.duration})</span>
 
-
-                                        <p className='description'>{item.description}</p>
                                     </td>
                                     <td className='desktop-only'>
                                         {item.duration}
@@ -53,6 +51,21 @@ export default function Pricing() {
                     <img src="images/mastercard.webp" alt="Mastercard Payment" className="payment-icon" /> 
                     */}
                 </div>
+            </div>
+            <div className="visit-info">
+                <p className="visit-info-title">
+                    Jak przygotować się do wizyty?
+                </p>
+
+                <p className="visit-info-line highlight">
+                    👕 Proszę zabrać ze sobą <strong>wygodne ubranie </strong><br />
+                    (luźne spodenki i koszulkę, które łatwo zdjąć, aby odsłonić leczony obszar).
+                </p>
+
+                <p className="visit-info-line highlight">
+                    📄 <strong>Dokumentacja medyczna</strong><br />
+                    RTG, USG, MRI – dotyczące aktualnych dolegliwości.
+                </p>
             </div>
         </section>
     );

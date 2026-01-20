@@ -31,26 +31,19 @@ export default function Home() {
         <div className="home-content">
           <h2>Piotr Bajdziak</h2>
           <p className="slide slide-left">
-            Witaj w moim gabinecie. Jestem magistrem fizjoterapii, absolwentem
-            Akademii Górnośląskiej oraz Szkoły Mistrzostwa Sportowego BBTS
-            Podbeskidzie.
+            {INFO.bio[0]}
           </p>
 
           <p className="slide slide-right">
-            Jako wciąż aktywny sportowiec, doskonale rozumiem mechanikę ludzkiego
-            ciała oraz wyzwania, jakie niesie ze sobą trening i codzienne
-            funkcjonowanie.
+            {INFO.bio[1]}
           </p>
 
           <p className="slide slide-left">
-            W swojej pracy w Szczecinie łączę wiedzę akademicką z praktyką,
-            specjalizując się w rehabilitacji sportowej, treningu medycznym oraz
-            zaawansowanych metodach terapii manualnej i powięziowej.
+            {INFO.bio[2]}
           </p>
 
           <p className="slide slide-right highlight">
-            Niezależnie od tego, czy walczysz z przewlekłym bólem, czy wracasz do
-            formy po kontuzji – pomogę Ci odzyskać sprawność.
+            {INFO.bio[3]}
           </p>
         </div>
         {/*

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import './Contact.css';
-import { CONTACT } from '../../config';
+import { CONTACT, INFO } from '../../config';
 
 
 export default function Contact() {
@@ -11,23 +11,23 @@ export default function Contact() {
                 <h2>Kontakt</h2>
                 <div className="contact-box">
                     <div className='contact-items-list'>
-                    <div className="contact-item">
-                        <Phone className="contact-icon" />
-                        <a href={`tel:${CONTACT.phone}`} className="contact-link">
-                            {CONTACT.phone}
-                        </a>
-                    </div>
+                        <div className="contact-item">
+                            <Phone className="contact-icon" />
+                            <a href={`tel:${CONTACT.phone}`} className="contact-link">
+                                {CONTACT.phone}
+                            </a>
+                        </div>
 
-                    <div className="contact-item">
-                        <Mail className="contact-icon" />
-                        <a
-                            href={`mailto:${CONTACT.email}`}
-                            className="contact-link"
-                        >
-                            {CONTACT.email}
-                        </a>
-                    </div>
-                    {/* WhatsApp link disabled
+                        <div className="contact-item">
+                            <Mail className="contact-icon" />
+                            <a
+                                href={`mailto:${CONTACT.email}`}
+                                className="contact-link"
+                            >
+                                {CONTACT.email}
+                            </a>
+                        </div>
+                        {/* WhatsApp link disabled
                     <div className="contact-item">
                         <MessageCircle className="contact-icon" />
                         <a
@@ -40,17 +40,17 @@ export default function Contact() {
                         </a>
                     </div>
                     */}
-                    <div className="contact-item">
-                        <MapPin className="contact-icon" />
-                        <a
-                            href="https://www.google.com/maps/place/al.+Powsta%C5%84c%C3%B3w+Wielkopolskich+66%2F68,+70-111+Szczecin"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="contact-link"
-                        >
-                            {CONTACT.address}
-                        </a>
-                    </div>
+                        <div className="contact-item">
+                            <MapPin className="contact-icon" />
+                            <a
+                                href="https://www.google.com/maps/place/al.+Powsta%C5%84c%C3%B3w+Wielkopolskich+66%2F68,+70-111+Szczecin"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="contact-link"
+                            >
+                                {CONTACT.address}
+                            </a>
+                        </div>
                     </div>
                     <div className="map-container">
                         <iframe
@@ -62,6 +62,16 @@ export default function Contact() {
                             allowFullScreen=""
                             loading="lazy"
                         ></iframe>
+                        <div className="map-info">
+                            <p className="map-info-line">
+                                <strong>Budynek Przychodni</strong> — wejście z boku budynku
+                            </p>
+
+                            <p className="map-info-line highlight">
+                                🚗 <strong>PARKING</strong> z tyłu przychodni POZ<br />
+                                <span className="parking-number">Miejsce parkingowe nr 2</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
 

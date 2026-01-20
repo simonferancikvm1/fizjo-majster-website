@@ -69,6 +69,39 @@
     border-radius: 8px;
 }
 
+.map-info {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.map-info-line {
+  margin: 0.4rem 0;
+  line-height: 1.5;
+}
+
+.map-info-line strong {
+  font-weight: 600;
+}
+
+.map-info-line.highlight {
+  margin-top: 0.75rem;
+  background: #eef4ff;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+}
+
+.parking-number {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
 /* MOBILE */
 @media (max-width: 500px) {
     .contact-item {

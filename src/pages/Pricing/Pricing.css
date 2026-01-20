@@ -97,6 +97,43 @@
     height: 30px;
 }
 
+.visit-info {
+  
+  padding: 1.2rem 1.4rem;
+  background: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+  
+  display: block;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.visit-info-title {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.visit-info-line {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.visit-info-line strong {
+  font-weight: 600;
+}
+
+.visit-info-line.highlight {
+  margin-top: 0.75rem;
+  background: #eef4ff;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
