@@ -6,7 +6,7 @@ import { CONTACT, INFO } from '../../config';
 
 export default function Contact() {
     return (
-        <section id="contact-section" className="contact-section">
+        <section id="kontakt" className="contact-section">
             <div className="contact-container">
                 <h2>Kontakt</h2>
                 <div className="contact-box">

@@ -1,17 +1,20 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { House, Image, DollarSign, Phone, Briefcase, Facebook, Instagram, Menu, X } from "lucide-react";
 import "./Header.css";
 import { SOCIAL } from '../config';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navRef = useRef(null);
+    const navigate = useNavigate();
 
 
-    const handleLinkClick = () => {
+    const handleLinkClick = (page) => {
         setMenuOpen(false); // close menu after clicking a link
+        navigate(page);
     };
 
 
@@ -21,17 +24,17 @@ export default function Header() {
             <div className="navbar-container">
                 {/* Logo */}
                 <div className="logo">
-                    <a href="#home-section" onClick={handleLinkClick}>
+                    <button onClick={() => handleLinkClick("/o-mnie")}>
                         <img src="images/logo_main.webp" alt="Logo" className="logo-img" />
-                    </a>
+                    </button>
                 </div>
                 {/* Desktop Menu */}
                 <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
-                    <a href="#home-section" className="nav-item" onClick={handleLinkClick}><House className="icon" /> O mnie</a>
-                    <a href="#services-section" className="nav-item" onClick={handleLinkClick}><Briefcase className="icon" /> Usługi</a>
-                    <a href="#gallery-section" className="nav-item" onClick={handleLinkClick}><Image className="icon" /> Galeria</a>
-                    <a href="#pricing-section" className="nav-item" onClick={handleLinkClick}><DollarSign className="icon" /> Cennik</a>
-                    <a href="#contact-section" className="nav-item" onClick={handleLinkClick}><Phone className="icon" /> Kontakt</a>
+                    <button onClick={() => handleLinkClick("/o-mnie")}><House className="icon" /> O mnie</button>
+                    <button onClick={() => handleLinkClick("/uslugi")}><Briefcase className="icon" /> Usługi</button>
+                    <button onClick={() => handleLinkClick("/galeria")}><Image className="icon" /> Galeria</button>
+                    <button onClick={() => handleLinkClick("/cennik")}><DollarSign className="icon" /> Cennik</button>
+                    <button onClick={() => handleLinkClick("/kontakt")}><Phone className="icon" /> Kontakt</button>
                 </nav>
                 {/* Mobile Menu Toggle */}
                 <div className="mobile-header-row">

@@ -104,7 +104,7 @@
 }
 
 /* Mobile responsive */
-@media (max-width: 950px) {
+@media (max-width: 500px) {
 
   .services-section {
     padding: 2rem 1rem;
@@ -120,8 +120,8 @@
   }
 
   .service-img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
   .service-info {

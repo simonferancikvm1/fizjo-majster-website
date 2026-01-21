@@ -9,12 +9,14 @@ import Contact from './pages/Contact/Contact'
 import Services from './pages/Services/Services'
 import Pricing from './pages/Pricing/Pricing'
 import ReservationButton from './components/ReservationButton'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToSection from './components/ScrollToSection';
+import { BrowserRouter as Router } from "react-router-dom";
 
 
 function App() {
   return (
-    <>
+    <Router>
+      <ScrollToSection />
       <Header />
       <Home />
       <Services />
@@ -23,7 +25,7 @@ function App() {
       <Contact />
       <ReservationButton />
       <Footer />
-    </>
+    </Router>
   );
 }
 

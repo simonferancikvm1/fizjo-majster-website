@@ -4,6 +4,11 @@
   padding: 15px;
 }
 
+.footer-section{
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-content {
   display: flex;
   flex-direction: column; /* stack all sections vertically */
@@ -19,24 +24,23 @@
 }
 
 .footer-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
   
 }
 
-.footer-item a{
+.footer-item span,
+.footer-item a,
+.footer-item p {
   text-decoration: none;
   color: white;
-  
+  margin-left: 12px;
 }
-
 .footer-icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+  
 }
 
 .social-icons {

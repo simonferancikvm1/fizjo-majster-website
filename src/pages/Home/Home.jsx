@@ -26,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section id="home-section" ref={sectionRef} className="home-section">
+    <section id="o-mnie" ref={sectionRef} className="home-section">
       <div className="overlay">
         <div className="home-content">
           <h2>Piotr Bajdziak</h2>

@@ -105,7 +105,12 @@
 /* MOBILE */
 @media (max-width: 500px) {
     .contact-item {
-        justify-content: flex-start;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .contact-link {
+        margin-left: 12px;
     }
 
     .contact-box {

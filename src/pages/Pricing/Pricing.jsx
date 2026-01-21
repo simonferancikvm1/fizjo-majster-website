@@ -7,7 +7,7 @@ import { SERVICES, INFO } from '../../config';
 export default function Pricing() {
 
     return (
-        <section id="pricing-section" className="pricing-section">
+        <section id="cennik" className="pricing-section">
             <h2>Cennik</h2>
             <div className="pricing-card">
 

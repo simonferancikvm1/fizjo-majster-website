@@ -1,5 +1,5 @@
 header.navbar {
-  background-color: rgb(0, 137,192);
+  background-color: rgb(0, 137, 192);
   padding: 0.5rem 1rem;
   position: fixed;
   width: 100%;
@@ -18,17 +18,28 @@ header.navbar {
   height: 3em;
 }
 
-.logo {
-  height: 100%;
+
+.logo button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+
+   display: flex;
+  align-items: center;
+  height: 100%; /* match navbar height */
+  
 }
 
-.logo:hover {
+.logo button:hover {
   filter: drop-shadow(0 0 4em #01020caa);
   cursor: pointer;
 }
 
 
 .logo-img {
+  max-height: 3em;
   height: 100%;
   width: auto;
   display: block;
@@ -40,14 +51,25 @@ header.navbar {
   margin-left: auto;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+
+  cursor: pointer;
   transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links button:hover {
   color: #454545;
 }
 
@@ -93,7 +115,7 @@ header.navbar {
 
 
 /* Mobile Styles */
-@media (max-width: 950px) and (min-width: 501px){
+@media (max-width: 950px) and (min-width: 501px) {
 
   .mobile-header-row {
     display: flex;
@@ -120,7 +142,7 @@ header.navbar {
     display: none;
     flex-direction: column;
     gap: 0;
-    background-color: rgb(0, 137,192);
+    background-color: rgb(0, 137, 192);
     position: absolute;
     top: 100%;
     right: 0;
@@ -131,8 +153,12 @@ header.navbar {
     display: flex;
   }
 
-  .nav-links a {
+  .nav-links a,
+  .nav-links button {
     padding: 0.75rem 1rem;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .menu-toggle {
@@ -143,10 +169,11 @@ header.navbar {
 }
 
 @media (max-width: 500px) {
-  .social-media{
+  .social-media {
     display: none;
 
   }
+
   .menu-toggle {
     background: none;
     border: none;
@@ -159,7 +186,7 @@ header.navbar {
     display: none;
     flex-direction: column;
     gap: 0;
-    background-color: rgb(0, 137,192);
+    background-color: rgb(0, 137, 192);
     position: absolute;
     top: 100%;
     right: 0;
@@ -170,8 +197,12 @@ header.navbar {
     display: flex;
   }
 
-  .nav-links a {
+  .nav-links a,
+  .nav-links button {
     padding: 0.75rem 1rem;
+    text-align: left;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .menu-toggle {
@@ -179,4 +210,3 @@ header.navbar {
   }
 
 }
-

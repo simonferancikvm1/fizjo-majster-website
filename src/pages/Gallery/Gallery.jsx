@@ -27,7 +27,7 @@ export default function Gallery() {
     };
 
     return (
-        <section id="gallery-section" className="gallery-section">
+        <section id="galeria" className="gallery-section">
             <div className="gallery-grid">
                 {IMAGES.map((src, index) => (
                     <img
